@@ -1,0 +1,12 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00EB75DB    Mar 17 20:23:01 2024    /home/ubuntu/Dev/mku3pa_debug/mku3pa.runs/impl_1/top.bit
+0x01000000    0x010C21C2    Mar 17 20:41:58 2024    /home/ubuntu/Dev/mku3pa_debug/u-boot.itb

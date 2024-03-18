@@ -1,0 +1,197 @@
+2018.3:
+ * Version 3.2 (Rev. 15)
+ * Feature Enhancement: Added support for AXI Master and LMB extended address
+ * Feature Enhancement: Automatically set debug interface from connected processors
+ * Feature Enhancement: Allow serial debug interface with no BSCAN
+
+2018.2:
+ * Version 3.2 (Rev. 14)
+ * General: Improve clocking for Xilinx Virtual Cable (XVC) debug connection
+
+2018.1:
+ * Version 3.2 (Rev. 13)
+ * General: Add waivers to suppress reported invalid CDC violations
+
+2017.4:
+ * Version 3.2 (Rev. 12)
+ * Bug Fix: Do not inactivate "Enable Cross Trigger" and "External Trace" when MDM is instantiated
+ * Feature Enhancement: Ensure that the MDM always responds to accesses on the AXI slave interface
+ * Feature Enhancement: Provide parameter to set external trigger reset value
+ * Feature Enhancement: Add alternate external trace protocol
+
+2017.3:
+ * Version 3.2 (Rev. 11)
+ * Feature Enhancement: Added option to set parallel debug interface to AXI
+ * Feature Enhancement: Support Xilinx Virtual Cable (XVC) debug connection
+
+2017.2:
+ * Version 3.2 (Rev. 10)
+ * General: Provide parameter to select asynchronous reset for AXI Stream external trace
+
+2017.1:
+ * Version 3.2 (Rev. 9)
+ * Bug Fix: Corrected step into behavior on UltraScale+
+ * Bug Fix: Added BSCAN timing constraint to ensure MicroBlaze is detected on UltraScale+
+ * Feature Enhancement: Allow setting data width for AXI-Stream external trace
+ * Feature Enhancement: Provide parameter to control instantiation of primitives
+ * Feature Enhancement: Support parallel debug interface via BSCAN when debug register access from AXI is not enabled
+
+2016.4:
+ * Version 3.2 (Rev. 8)
+ * General: Modify HDL to avoid tool warnings, no functional changes
+
+2016.3:
+ * Version 3.2 (Rev. 7)
+ * Port Change: Added parallel debug access signals
+ * Feature Enhancement: Provide parallel synchronous debug access
+ * Feature Enhancement: Added additional AXI bus interface properties
+ * Feature Enhancement: Defined bus interface for external BSCAN signals
+ * Feature Enhancement: Option to disable BSCAN when using debug register access from AXI
+ * Other: Source HDL files are concatenated into a single file to speed up synthesis and simulation. No changes required by the user
+ * Other: Added wrappers for unisim FPGA primitives
+
+2016.2:
+ * Version 3.2 (Rev. 6)
+ * Provided register information for all registers, including description and bit field definitions
+ * Added AXI bus master interface property HAS_BURST
+ * Revision change in one or more subcores
+
+2016.1:
+ * Version 3.2 (Rev. 5)
+ * Avoid upgrade warnings
+ * Added parameter enablement expressions for user parameters
+
+2015.4.2:
+ * Version 3.2 (Rev. 4)
+ * No changes
+
+2015.4.1:
+ * Version 3.2 (Rev. 4)
+ * No changes
+
+2015.4:
+ * Version 3.2 (Rev. 4)
+ * No changes
+
+2015.3:
+ * Version 3.2 (Rev. 4)
+ * Supported devices and production status are now determined automatically, to simplify support for future devices
+ * Improved performance for debug access to LMB
+ * IP revision number added to HDL module, library, and include file names, to support designs with both locked and upgraded IP instances
+ * Revision change in one or more subcores
+
+2015.2.1:
+ * Version 3.2 (Rev. 3)
+ * No changes
+
+2015.2:
+ * Version 3.2 (Rev. 3)
+ * Added constraints for BSCAN output signals
+
+2015.1:
+ * Version 3.2 (Rev. 2)
+ * Added support for additional Ultrascale devices
+ * Enabled out-of-context clock frequency setting by adding FREQ_HZ parameter to clock interface
+
+2014.4.1:
+ * Version 3.2 (Rev. 1)
+ * No changes
+
+2014.4:
+ * Version 3.2 (Rev. 1)
+ * Improvements of reset handling, no functional changes
+
+2014.3:
+ * Version 3.2
+ * Added support for external trace
+ * Updated subcore references, no functional changes
+
+2014.2:
+ * Version 3.1 (Rev. 1)
+ * Removed revision control tags from source code comments, no functional changes
+
+2014.1:
+ * Version 3.1
+ * Added support for debug register access from AXI
+ * Added support for AXI memory access from debug
+ * Added cross trigger support
+ * Internal device family name change, no functional changes
+
+2013.4:
+ * Version 3.0 (Rev. 3)
+ * Added XDC constraints for DRCK and UPDATE internal clocks
+
+2013.3:
+ * Version 3.0 (Rev. 2)
+ * Reduced warnings in simulation
+ * Support for Automotive Artix-7, Automotive Zynq, Defense Grade Artix-7, and Defense Grade Zynq devices at Production status
+
+2013.2:
+ * Version 3.0 (Rev. 1)
+ * Repackaged to improve internal automation, no functional changes
+
+2013.1:
+ * Version 3.0
+ * Vivado-only core, with no functional changes from version 2.10.a
+ * There have been no functional or interface changes to this IP.  The version number has changed to support unique versioning in Vivado starting with 2013.1.
+
+2012.4:
+ * Version 2.10.a
+ * No changes
+
+2012.3:
+ * Version 2.10.a
+ * No changes
+
+2012.2:
+ * Version 2.10.a
+ * Native Vivado release
+ * Support for up to 32 processors
+ * External BSCAN input port
+ * Added C_USE_BSCAN parameter to select internal, icon or external BSCAN
+
+(c) Copyright 2002 - 2018 Xilinx, Inc. All rights reserved.
+
+This file contains confidential and proprietary information
+of Xilinx, Inc. and is protected under U.S. and
+international copyright and other intellectual property
+laws.
+
+DISCLAIMER
+This disclaimer is not a license and does not grant any
+rights to the materials distributed herewith. Except as
+otherwise provided in a valid license issued to you by
+Xilinx, and to the maximum extent permitted by applicable
+law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+(2) Xilinx shall not be liable (whether in contract or tort,
+including negligence, or under any other theory of
+liability) for any loss or damage of any kind or nature
+related to, arising under or in connection with these
+materials, including for any direct, or any indirect,
+special, incidental, or consequential loss or damage
+(including loss of data, profits, goodwill, or any type of
+loss or damage suffered as a result of any action brought
+by a third party) even if such damage or loss was
+reasonably foreseeable or Xilinx had been advised of the
+possibility of the same.
+
+CRITICAL APPLICATIONS
+Xilinx products are not designed or intended to be fail-
+safe, or for use in any application requiring fail-safe
+performance, such as life-support or safety devices or
+systems, Class III medical devices, nuclear facilities,
+applications related to the deployment of airbags, or any
+other applications that could lead to death, personal
+injury, or severe property or environmental damage
+(individually and collectively, "Critical
+Applications"). Customer assumes the sole risk and
+liability of any use of Xilinx products in Critical
+Applications, subject only to applicable laws and
+regulations governing limitations on product liability.
+
+THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+PART OF THIS FILE AT ALL TIMES.

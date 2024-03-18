@@ -1,7 +1,0 @@
-sv xil_defaultlib  \
-"/home/ubuntu/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-"/home/ubuntu/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
-
-verilog xil_defaultlib "glbl.v"
-
-nosort

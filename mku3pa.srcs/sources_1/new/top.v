@@ -747,452 +747,452 @@ module top(
                                         rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.fpu_kill_mem      );
     */
     //----------------------------------------------------------------------------
-    //ila_0 ila_0 (
-    //    .clk(clock),
-    //    .probe0({
-    //        /////////////////////////////
-    //        // TTC
-    //        //---------------------------
-    //        /*
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_valid,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_bits_opcode,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_bits_source,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_bits_data,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_bits_size,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_bits_mask,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_bits_address,
-    //        
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_d_valid,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_d_bits_opcode,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_d_bits_source,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_d_bits_data,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_d_bits_size,
-    //        
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.timer0.io_ctl_out_count_out,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.timer0.io_ctl_in_interrupt_en,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.timer0.io_ctl_in_interrupt_ac,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.timer0.io_ctl_in_clock_ctl,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.timer0.io_ctl_in_count_ctl,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.auto_int_xing_out_sync_0,
-    //        */
-    //        /////////////////////////////
-    //        // Ethernet
-    //        //---------------------------
-    //        /*
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_valid,
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_ready,
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_bits_opcode,
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_bits_size,
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_bits_source,
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_bits_address,
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_bits_data,
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_d_valid,
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_d_ready,
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_d_bits_opcode,
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_d_bits_size,
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_d_bits_source,
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_d_bits_data,
-    //        
-    //        rocketSystem.ethClockDomainWrapper.auto_eth_0_int_xing_out_sync_0,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.output_ISR,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.output_IMR,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.inputs_IER,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.inputs_IDR,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.inputs_TBQPH,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.inputs_TBQP,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.inputs_NCR,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.inputs_MAN,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_man_en,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_man_do,
-    //        
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_valid,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_d_valid,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_ready,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_d_ready,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_bits_opcode,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_d_bits_opcode,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_bits_source,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_d_bits_source,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_bits_address,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_bits_data,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_bits_size,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_d_bits_data,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_d_bits_size,
-    //        
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_txq.io_txq_en,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_txq.txq_ptr,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_txq.txq_ren,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_txq.txq_fwd,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_txq.state,
-    //        
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.io_rxq_en,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.rxq_ptr,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.req_ptr,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.rsp_ptr,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.state,
-    //        
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.req_act_0,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.req_act_1,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.req_act_2,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.req_act_3,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_rdy_0,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_rdy_1,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_rdy_2,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_rdy_3,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_tag_0,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_tag_1,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_tag_2,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_tag_3,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.req_tg0,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_fwd,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_ptr,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_hdr,
-    //        
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_do_0_valid,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_do_1_valid,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_di_0_valid,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_di_1_valid,
-    //        
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_do_0_last,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_do_1_last,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_di_0_last,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_di_1_last,
-    //        
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_ad_0,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_ad_1,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_sz_0,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_sz_1,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_we_0,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_we_1,
-    //        
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.fifo.io_deq_valid,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.fifo.io_deq_ready,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.fifo.io_deq_last,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.fifo.io_deq_data,
-    //        rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.fifo.io_deq_meta,
-    //        */
-    //        /////////////////////////////
-    //        // TTC
-    //        //---------------------------
-    //        /*
-    //        rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_valid,
-    //        rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_ready,
-    //        rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_bits_opcode,
-    //        rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_bits_size,
-    //        rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_bits_source,
-    //        rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_bits_address,
-    //        rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_bits_data,
-    //        rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_d_valid,
-    //        rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_d_ready,
-    //        rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_d_bits_opcode,
-    //        rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_d_bits_size,
-    //        rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_d_bits_source,
-    //        rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_d_bits_data,
-    //        
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.counter0.io_ctl_in_clock_control,
-    //        rocketSystem.ttcClockDomainWrapper.ttc_0.counter0.io_reset_ack,
-    //        */
-    //        /////////////////////////////
-    //        // QSPI Flash & UART
-    //        //---------------------------
-    //        /*
-    //        qspi_eos,
-    //        qspi_di ,
-    //        qspi_do ,
-    //        qspi_dt ,
-    //        qspi_ck ,
-    //        qspi_cs , 
-    //        //---------------------------
-    //        mdm_uart.state_reg,
-    //        mdm_uart.clk_pos,
-    //        uart_rxd,
-    //        uart_txd,
-    //        */
-    //        /////////////////////////////
-    //        // BUS Topology
-    //        //--------------------------
-    //        /*
-    //        // CPU -> DCache
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.io_cpu_req_bits_addr,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.io_cpu_req_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.io_cpu_resp_valid,
-    //        
-    //        // DCache -> SBUS
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_ready,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_ready,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_bits_opcode,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_bits_opcode,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_bits_address,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_bits_size,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_bits_source,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_bits_size,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_bits_source,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_bits_sink,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_bits_data,
-    //        
-    //        // CPU/DCache -> SBUS
-    //        rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_a_valid,
-    //        rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_d_valid,
-    //        rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_a_ready,
-    //        rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_a_bits_opcode,
-    //        rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_c_bits_opcode,
-    //        rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_a_bits_address,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_a_bits_size,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_a_bits_source,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_d_bits_size,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_d_bits_source,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_d_bits_sink,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_d_bits_data,
-    //        
-    //        // FBUS -> SBUS
-    //        rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_a_valid,
-    //        rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_valid,
-    //        rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_a_ready,
-    //        rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_ready,
-    //        rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_a_bits_opcode,
-    //        rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_bits_opcode,
-    //        rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_a_bits_address,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_a_bits_size,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_a_bits_source,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_bits_size,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_bits_source,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_bits_sink,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_bits_data,
-    //        
-    //        // SBUS -> L2 Wrapper (Broadcast)
-    //        rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_a_valid,
-    //        rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_b_valid,
-    //        rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_c_valid,
-    //        rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_valid,
-    //        rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_a_ready,
-    //        rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_ready,
-    //        rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_a_bits_opcode,
-    //        rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_c_bits_opcode,
-    //        rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_bits_opcode,
-    //        rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_a_bits_address,
-    //        rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_b_bits_address,
-    //        //rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_a_bits_size,
-    //        //rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_a_bits_source,
-    //        //rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_bits_size,
-    //        //rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_bits_source,
-    //        //rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_bits_sink,
-    //        //rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_bits_data,
-    //        
-    //        // SBUS -> CBUS
-    //        rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_a_valid,
-    //        rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_valid,
-    //        rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_a_ready,
-    //        rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_ready,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_a_bits_opcode,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_bits_opcode,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_a_bits_address,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_a_bits_size,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_a_bits_source,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_bits_size,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_bits_source,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_bits_sink,
-    //        //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_bits_data,
-    //        
-    //        // CBUS -> PBUS
-    //        rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_a_valid,
-    //        rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_valid,
-    //        rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_a_ready,
-    //        rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_ready,
-    //        //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_a_bits_opcode,
-    //        //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_bits_opcode,
-    //        //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_a_bits_address,
-    //        //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_a_bits_size,
-    //        //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_a_bits_source,
-    //        //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_bits_size,
-    //        //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_bits_source,
-    //        //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_bits_sink,
-    //        //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_bits_data,
-    //        
-    //        // PBUS Input
-    //        //rocketSystem.subsystem_pbus.auto_bus_xing_in_a_valid,
-    //        //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_valid,
-    //        //rocketSystem.subsystem_pbus.auto_bus_xing_in_a_ready,
-    //        //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_ready,
-    //        //rocketSystem.subsystem_pbus.auto_bus_xing_in_a_bits_opcode,
-    //        //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_bits_opcode,
-    //        //rocketSystem.subsystem_pbus.auto_bus_xing_in_a_bits_address,
-    //        //rocketSystem.subsystem_pbus.auto_bus_xing_in_a_bits_size,
-    //        //rocketSystem.subsystem_pbus.auto_bus_xing_in_a_bits_source,
-    //        //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_bits_size,
-    //        //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_bits_source,
-    //        //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_bits_sink,
-    //        //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_bits_data,
-    //        */
-    //        /////////////////////////////
-    //        // DCache TLB
-    //        //---------------------------
-    //        /*
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s1_hit_way,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_hit_way,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.probe_bits_address,  
-    //                                                                 
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.resetting,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.metaArb_io_in_1_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.metaArb_io_in_2_valid,                                                 
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.metaArb_io_in_3_valid,                                                  
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.metaArb_io_in_4_valid,                                                    
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.metaArb_io_in_6_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.dataArb_io_in_0_valid,                                                    
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.dataArb_io_in_1_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.dataArb_io_in_2_valid,                                                 
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.dataArb_io_in_3_valid,
-    //        
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_req_size,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_req_addr,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.inWriteback,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.releaseRejected,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_release_data_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s1_release_data_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.release_ack_wait,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.release_state,
-    //        
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_valid_hit_pre_data_ecc, // s2_valid_uncached_pending
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_valid_miss,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_uncached,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.uncachedInFlight_0,
-    //        
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_hit_state_state, // s2_uncached
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_pma_must_alloc,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_pma_cacheable,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_req_no_alloc,
-    //        
-    //        // DCache -> Memory
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_c_bits_param, // Tile-Link Output
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_c_bits_address,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_bits_address,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_bits_opcode,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_c_bits_opcode,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_bits_opcode,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_ready,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_c_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_c_ready,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_b_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_b_ready,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_ready, // s2_nack_uncached
-    //        */
-    //        /////////////////////////////
-    //        // CPU EX/MEM/WB Status
-    //        //--------------------------
-    //        /*
-    //        // rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._csr_io_trace_0_valid, // Trace(0), valid
-    //        // rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._csr_io_trace_0_iaddr, // Trace(0), iaddr
-    //        // rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._ibuf_io_inst_0_valid,
-    //        // rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._ibuf_io_pc,
-    //        
-    //        //---------------------------
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.replay_wb_common,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.take_pc_wb,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.take_pc_mem,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.take_pc_mem_wb,
-    //        
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_reg_pc,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_reg_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_reg_replay,
-    //        //rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_reg_xcpt,
-    //        // 
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.mem_reg_pc,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.mem_reg_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.mem_reg_replay,
-    //        //rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.mem_reg_xcpt,
-    //        // 
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.wb_reg_pc,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.wb_reg_valid,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.wb_reg_replay,
-    //        //rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.wb_reg_xcpt,
-    //        
-    //        //--------------------------
-    //        // CPU Stalld && DCache NACK
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_valid_uncached_pending, // s2_nack_uncached
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_valid_masked          , // s2_nack_misc
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_req_cmd               , // s2_nack_misc
-    //        not_s2_meta_error, // s2_nack_misc
-    //        
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache._io_cpu_s2_nack_output, // s2_nack
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_valid_no_xcpt , // s2_nack
-    //        not_s2_dont_nack_uncached, // s2_nack
-    //        not_s2_dont_nack_misc    , // s2_nack
-    //        not_s2_valid_hit         , // s2_nack
-    //        
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.dcache_blocked_blocked, // ctrl_stalld
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.id_mem_busy        , // ctrl_stalld
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.id_reg_fence       , // ctrl_stalld
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.id_reg_pause       , // ctrl_stalld
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.data_hazard_mem    , // ctrl_stalld
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._ctrl_stalld_T_28  , // ctrl_stalld
-    //        
-    //        //--------------------------
-    //        // SBoard & RF Write Back
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._r, // sboard
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_reg_inst [11:7], // waddr
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.mem_reg_inst[11:7], // waddr
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.wb_reg_inst [11:7], // waddr
-    //        
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ll_wen  ,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ll_waddr,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.rf_wen  ,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.rf_waddr,
-    //        
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_valid       , 
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_bits_tag    ,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_bits_cmd    ,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_bits_addr   ,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_bits_size   ,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_resp_valid      ,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_resp_bits_replay,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_resp_bits_tag   ,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_resp_bits_data  ,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_resp_bits_size  ,
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_resp_bits_has_data,
-    //        
-    //        //--------------------------
-    //        replay_mem, // replay_mem
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.dcache_kill_mem    , // replay_mem
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.mem_ctrl_mem       , // dcache_kill_mem
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_replay_next, // dcache_kill_mem
-    //        
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.replay_ex          , // replay_ex
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_ctrl_mem        , // replay_ex_structural
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_ready  , // replay_ex_structural
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_ctrl_div        , // replay_ex_structural
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._div_io_req_ready  , // replay_ex_structural
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.wb_dcache_miss     , // replay_ex_load_use
-    //        rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_reg_load_use    , // replay_ex_load_use
-    //        */
-    //        /////////////////////////////
-    //        // DDR
-    //        //---------------------------
-    //        /*
-    //        mem_axi4_awaddr ,
-    //        mem_axi4_awlen  ,
-    //        mem_axi4_awsize ,
-    //        mem_axi4_awvalid,
-    //        mem_axi4_awready,
-    //        mem_axi4_wvalid ,
-    //        mem_axi4_wready ,
-    //        mem_axi4_bresp  ,
-    //        mem_axi4_bvalid ,
-    //        mem_axi4_bready ,
-    //        mem_axi4_araddr ,
-    //        mem_axi4_arlen  ,
-    //        mem_axi4_arsize ,
-    //        mem_axi4_arvalid,
-    //        mem_axi4_arready,
-    //        mem_axi4_rvalid ,
-    //        mem_axi4_rready ,
-    //        */
-    //        /////////////////////////////
-    //        reset
-    //    })
-    //);
+    ila_0 ila_0 (
+        .clk(clock),
+        .probe0({
+            /////////////////////////////
+            // TTC
+            //---------------------------
+            /*
+            rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_valid,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_bits_opcode,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_bits_source,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_bits_data,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_bits_size,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_bits_mask,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_a_bits_address,
+            
+            rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_d_valid,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_d_bits_opcode,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_d_bits_source,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_d_bits_data,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.auto_control_xing_in_d_bits_size,
+            
+            rocketSystem.ttcClockDomainWrapper.ttc_0.timer0.io_ctl_out_count_out,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.timer0.io_ctl_in_interrupt_en,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.timer0.io_ctl_in_interrupt_ac,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.timer0.io_ctl_in_clock_ctl,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.timer0.io_ctl_in_count_ctl,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.auto_int_xing_out_sync_0,
+            */
+            /////////////////////////////
+            // Ethernet
+            //---------------------------
+            /*
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_valid,
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_ready,
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_bits_opcode,
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_bits_size,
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_bits_source,
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_bits_address,
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_a_bits_data,
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_d_valid,
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_d_ready,
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_d_bits_opcode,
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_d_bits_size,
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_d_bits_source,
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_control_xing_in_d_bits_data,
+            
+            rocketSystem.ethClockDomainWrapper.auto_eth_0_int_xing_out_sync_0,
+            rocketSystem.ethClockDomainWrapper.eth_0.output_ISR,
+            rocketSystem.ethClockDomainWrapper.eth_0.output_IMR,
+            rocketSystem.ethClockDomainWrapper.eth_0.inputs_IER,
+            rocketSystem.ethClockDomainWrapper.eth_0.inputs_IDR,
+            rocketSystem.ethClockDomainWrapper.eth_0.inputs_TBQPH,
+            rocketSystem.ethClockDomainWrapper.eth_0.inputs_TBQP,
+            rocketSystem.ethClockDomainWrapper.eth_0.inputs_NCR,
+            rocketSystem.ethClockDomainWrapper.eth_0.inputs_MAN,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_man_en,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_man_do,
+            
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_valid,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_d_valid,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_ready,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_d_ready,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_bits_opcode,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_d_bits_opcode,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_bits_source,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_d_bits_source,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_bits_address,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_bits_data,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_a_bits_size,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_d_bits_data,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.io_dma_d_bits_size,
+            
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_txq.io_txq_en,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_txq.txq_ptr,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_txq.txq_ren,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_txq.txq_fwd,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_txq.state,
+            
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.io_rxq_en,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.rxq_ptr,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.req_ptr,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.rsp_ptr,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.state,
+            
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.req_act_0,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.req_act_1,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.req_act_2,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.req_act_3,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_rdy_0,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_rdy_1,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_rdy_2,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_rdy_3,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_tag_0,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_tag_1,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_tag_2,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_tag_3,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.req_tg0,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_fwd,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_ptr,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.rsp_hdr,
+            
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_do_0_valid,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_do_1_valid,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_di_0_valid,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_di_1_valid,
+            
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_do_0_last,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_do_1_last,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_di_0_last,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_di_1_last,
+            
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_ad_0,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_ad_1,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_sz_0,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_sz_1,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_we_0,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_dma.io_dma_we_1,
+            
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.fifo.io_deq_valid,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.fifo.io_deq_ready,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.fifo.io_deq_last,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.fifo.io_deq_data,
+            rocketSystem.ethClockDomainWrapper.eth_0.eth.gem_rxq.fifo.io_deq_meta,
+            */
+            /////////////////////////////
+            // TTC
+            //---------------------------
+            /*
+            rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_valid,
+            rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_ready,
+            rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_bits_opcode,
+            rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_bits_size,
+            rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_bits_source,
+            rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_bits_address,
+            rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_a_bits_data,
+            rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_d_valid,
+            rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_d_ready,
+            rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_d_bits_opcode,
+            rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_d_bits_size,
+            rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_d_bits_source,
+            rocketSystem.ttcClockDomainWrapper.auto_ttc_0_control_xing_in_d_bits_data,
+            
+            rocketSystem.ttcClockDomainWrapper.ttc_0.counter0.io_ctl_in_clock_control,
+            rocketSystem.ttcClockDomainWrapper.ttc_0.counter0.io_reset_ack,
+            */
+            /////////////////////////////
+            // QSPI Flash & UART
+            //---------------------------
+            /*
+            qspi_eos,
+            qspi_di ,
+            qspi_do ,
+            qspi_dt ,
+            qspi_ck ,
+            qspi_cs , 
+            //---------------------------
+            mdm_uart.state_reg,
+            mdm_uart.clk_pos,
+            uart_rxd,
+            uart_txd,
+            */
+            /////////////////////////////
+            // BUS Topology
+            //--------------------------
+            /*
+            // CPU -> DCache
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.io_cpu_req_bits_addr,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.io_cpu_req_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.io_cpu_resp_valid,
+            
+            // DCache -> SBUS
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_ready,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_ready,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_bits_opcode,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_bits_opcode,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_bits_address,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_bits_size,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_bits_source,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_bits_size,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_bits_source,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_bits_sink,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_bits_data,
+            
+            // CPU/DCache -> SBUS
+            rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_a_valid,
+            rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_d_valid,
+            rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_a_ready,
+            rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_a_bits_opcode,
+            rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_c_bits_opcode,
+            rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_a_bits_address,
+            //rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_a_bits_size,
+            //rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_a_bits_source,
+            //rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_d_bits_size,
+            //rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_d_bits_source,
+            //rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_d_bits_sink,
+            //rocketSystem.subsystem_sbus.auto_coupler_from_tile_tl_master_clock_xing_in_d_bits_data,
+            
+            // FBUS -> SBUS
+            rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_a_valid,
+            rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_valid,
+            rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_a_ready,
+            rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_ready,
+            rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_a_bits_opcode,
+            rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_bits_opcode,
+            rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_a_bits_address,
+            //rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_a_bits_size,
+            //rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_a_bits_source,
+            //rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_bits_size,
+            //rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_bits_source,
+            //rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_bits_sink,
+            //rocketSystem.subsystem_sbus.auto_coupler_from_bus_named_subsystem_fbus_bus_xing_in_d_bits_data,
+            
+            // SBUS -> L2 Wrapper (Broadcast)
+            rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_a_valid,
+            rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_b_valid,
+            rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_c_valid,
+            rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_valid,
+            rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_a_ready,
+            rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_ready,
+            rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_a_bits_opcode,
+            rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_c_bits_opcode,
+            rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_bits_opcode,
+            rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_a_bits_address,
+            rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_b_bits_address,
+            //rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_a_bits_size,
+            //rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_a_bits_source,
+            //rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_bits_size,
+            //rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_bits_source,
+            //rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_bits_sink,
+            //rocketSystem.subsystem_l2_wrapper.auto_coherent_jbar_in_d_bits_data,
+            
+            // SBUS -> CBUS
+            rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_a_valid,
+            rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_valid,
+            rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_a_ready,
+            rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_ready,
+            //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_a_bits_opcode,
+            //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_bits_opcode,
+            //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_a_bits_address,
+            //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_a_bits_size,
+            //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_a_bits_source,
+            //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_bits_size,
+            //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_bits_source,
+            //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_bits_sink,
+            //rocketSystem.subsystem_sbus.auto_coupler_to_bus_named_subsystem_cbus_bus_xing_out_d_bits_data,
+            
+            // CBUS -> PBUS
+            rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_a_valid,
+            rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_valid,
+            rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_a_ready,
+            rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_ready,
+            //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_a_bits_opcode,
+            //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_bits_opcode,
+            //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_a_bits_address,
+            //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_a_bits_size,
+            //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_a_bits_source,
+            //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_bits_size,
+            //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_bits_source,
+            //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_bits_sink,
+            //rocketSystem.subsystem_cbus.auto_coupler_to_bus_named_subsystem_pbus_bus_xing_out_d_bits_data,
+            
+            // PBUS Input
+            //rocketSystem.subsystem_pbus.auto_bus_xing_in_a_valid,
+            //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_valid,
+            //rocketSystem.subsystem_pbus.auto_bus_xing_in_a_ready,
+            //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_ready,
+            //rocketSystem.subsystem_pbus.auto_bus_xing_in_a_bits_opcode,
+            //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_bits_opcode,
+            //rocketSystem.subsystem_pbus.auto_bus_xing_in_a_bits_address,
+            //rocketSystem.subsystem_pbus.auto_bus_xing_in_a_bits_size,
+            //rocketSystem.subsystem_pbus.auto_bus_xing_in_a_bits_source,
+            //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_bits_size,
+            //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_bits_source,
+            //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_bits_sink,
+            //rocketSystem.subsystem_pbus.auto_bus_xing_in_d_bits_data,
+            */
+            /////////////////////////////
+            // DCache TLB
+            //---------------------------
+            /*
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s1_hit_way,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_hit_way,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.probe_bits_address,  
+                                                                     
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.resetting,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.metaArb_io_in_1_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.metaArb_io_in_2_valid,                                                 
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.metaArb_io_in_3_valid,                                                  
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.metaArb_io_in_4_valid,                                                    
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.metaArb_io_in_6_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.dataArb_io_in_0_valid,                                                    
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.dataArb_io_in_1_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.dataArb_io_in_2_valid,                                                 
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.dataArb_io_in_3_valid,
+            
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_req_size,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_req_addr,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.inWriteback,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.releaseRejected,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_release_data_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s1_release_data_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.release_ack_wait,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.release_state,
+            
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_valid_hit_pre_data_ecc, // s2_valid_uncached_pending
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_valid_miss,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_uncached,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.uncachedInFlight_0,
+            
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_hit_state_state, // s2_uncached
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_pma_must_alloc,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_pma_cacheable,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_req_no_alloc,
+            
+            // DCache -> Memory
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_c_bits_param, // Tile-Link Output
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_c_bits_address,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_bits_address,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_bits_opcode,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_c_bits_opcode,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_bits_opcode,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_d_ready,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_c_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_c_ready,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_b_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_b_ready,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.auto_out_a_ready, // s2_nack_uncached
+            */
+            /////////////////////////////
+            // CPU EX/MEM/WB Status
+            //--------------------------
+            /*
+            // rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._csr_io_trace_0_valid, // Trace(0), valid
+            // rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._csr_io_trace_0_iaddr, // Trace(0), iaddr
+            // rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._ibuf_io_inst_0_valid,
+            // rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._ibuf_io_pc,
+            
+            //---------------------------
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.replay_wb_common,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.take_pc_wb,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.take_pc_mem,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.take_pc_mem_wb,
+            
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_reg_pc,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_reg_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_reg_replay,
+            //rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_reg_xcpt,
+            // 
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.mem_reg_pc,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.mem_reg_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.mem_reg_replay,
+            //rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.mem_reg_xcpt,
+            // 
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.wb_reg_pc,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.wb_reg_valid,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.wb_reg_replay,
+            //rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.wb_reg_xcpt,
+            
+            //--------------------------
+            // CPU Stalld && DCache NACK
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_valid_uncached_pending, // s2_nack_uncached
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_valid_masked          , // s2_nack_misc
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_req_cmd               , // s2_nack_misc
+            not_s2_meta_error, // s2_nack_misc
+            
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache._io_cpu_s2_nack_output, // s2_nack
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.dcache.s2_valid_no_xcpt , // s2_nack
+            not_s2_dont_nack_uncached, // s2_nack
+            not_s2_dont_nack_misc    , // s2_nack
+            not_s2_valid_hit         , // s2_nack
+            
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.dcache_blocked_blocked, // ctrl_stalld
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.id_mem_busy        , // ctrl_stalld
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.id_reg_fence       , // ctrl_stalld
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.id_reg_pause       , // ctrl_stalld
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.data_hazard_mem    , // ctrl_stalld
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._ctrl_stalld_T_28  , // ctrl_stalld
+            
+            //--------------------------
+            // SBoard & RF Write Back
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._r, // sboard
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_reg_inst [11:7], // waddr
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.mem_reg_inst[11:7], // waddr
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.wb_reg_inst [11:7], // waddr
+            
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ll_wen  ,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ll_waddr,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.rf_wen  ,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.rf_waddr,
+            
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_valid       , 
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_bits_tag    ,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_bits_cmd    ,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_bits_addr   ,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_bits_size   ,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_resp_valid      ,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_resp_bits_replay,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_resp_bits_tag   ,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_resp_bits_data  ,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_resp_bits_size  ,
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_resp_bits_has_data,
+            
+            //--------------------------
+            replay_mem, // replay_mem
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.dcache_kill_mem    , // replay_mem
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.mem_ctrl_mem       , // dcache_kill_mem
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_replay_next, // dcache_kill_mem
+            
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.replay_ex          , // replay_ex
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_ctrl_mem        , // replay_ex_structural
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_ready  , // replay_ex_structural
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_ctrl_div        , // replay_ex_structural
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core._div_io_req_ready  , // replay_ex_structural
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.wb_dcache_miss     , // replay_ex_load_use
+            rocketSystem.tile_prci_domain.tile_reset_domain_tile.core.ex_reg_load_use    , // replay_ex_load_use
+            */
+            /////////////////////////////
+            // DDR
+            //---------------------------
+            /*
+            mem_axi4_awaddr ,
+            mem_axi4_awlen  ,
+            mem_axi4_awsize ,
+            mem_axi4_awvalid,
+            mem_axi4_awready,
+            mem_axi4_wvalid ,
+            mem_axi4_wready ,
+            mem_axi4_bresp  ,
+            mem_axi4_bvalid ,
+            mem_axi4_bready ,
+            mem_axi4_araddr ,
+            mem_axi4_arlen  ,
+            mem_axi4_arsize ,
+            mem_axi4_arvalid,
+            mem_axi4_arready,
+            mem_axi4_rvalid ,
+            mem_axi4_rready ,
+            */
+            /////////////////////////////
+            reset
+        })
+    );
     //----------------------------------------------------------------------------
     /*
     ila_0 ila_1 (
